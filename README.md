@@ -1,4 +1,4 @@
-# Web Art Forge – Portfolio
+# Scepan – Portfolio
 
 Live: [https://webartforge.com/portfolio](https://webartforge.com/portfolio)
 
