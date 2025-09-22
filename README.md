@@ -10,8 +10,8 @@ This is my personal front-end portfolio built with **React** and **Vite**. It sh
 
 | Project    | Type        | Live Link |
 |------------|-------------|-----------|
-| **Uncork** | Front-End SPA | [webartforge.com/uncork](https://webartforge.com/uncork/) |
-| **TimeLux**| Full-Stack E-Commerce | [webartforge.com/timelux](https://webartforge.com/timelux/) |
+| **Uncork** | Front-End SPA | [webartforge.com/uncork](https://uncork.webartforge.com/) |
+| **TimeLux**| Full-Stack E-Commerce | [webartforge.com/timelux](https://timelux.webartforge.com/) |
 | **MicroCro** | External App | [microcro.com](https://microcro.com) |
 
 ---
@@ -23,7 +23,10 @@ This is my personal front-end portfolio built with **React** and **Vite**. It sh
 - JavaScript (ES6+)
 - CSS3
 - React Router
-- React Icons
+- Strapi
+- Stripe
+- NPM (Node)
+  
 
 ---
 
