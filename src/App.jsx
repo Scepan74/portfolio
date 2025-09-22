@@ -20,6 +20,27 @@ import { PiMusicNotesLight } from "react-icons/pi";
 import logo from "./assets/logo.webp";
 import Modal from "./components/Modal";
 import CircleAnimation from "./components/Circle";
+import roundButton from "./assets/round-button.webp";
+import profil from "./assets/profil.webp";
+import anfas from "./assets/anfas.webp";
+import viteIcon from "./assets/vite.webp";
+import babic from "./assets/babic.webp";
+import gaga from "./assets/gaga.webp";
+import sihle from "./assets/sihle.webp";
+import mrFly from "./assets/mrFly.webp";
+import drago from "./assets/drago.webp";
+import jela from "./assets/jela.webp";
+import danijela from "./assets/danijela.webp";
+import acacakalic from "./assets/acacakalic.webp";
+import ivan from "./assets/ivan.webp";
+import jovan from "./assets/jovan.webp";
+import mia from "./assets/mia.webp";
+import wick from "./assets/wick.webp";
+import tasta from "./assets/tasta.webp";
+import gabi from "./assets/gabi-svestoznas.mp3";
+import timelux from "./assets/screenshot-timelux.webp";
+import uncork from "./assets/screenshot-uncork.webp";
+import micro from "./assets/screenshot-micro.webp";
 
 const App = () => {
   const audioRef = useRef(null);
@@ -30,7 +51,7 @@ const App = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isSpread, setIsSpread] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [modalText, setModalText] = useState("");
+
   const [testis, setTestis] = useState({
     name: "",
     title: "",
@@ -65,15 +86,14 @@ const App = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main id="app">
       <div className="sound" title="Toggle Music">
-        <audio
-          ref={audioRef}
-          src="src/assets/gabi-novak-sve-sto-znas-o-meni-128-ytshorts.savetube.me.mp3"
-          loop
-        />
+        <audio ref={audioRef} src={gabi} loop />
         <button id="sound-btn" onClick={togglePlay}>
           <PiMusicNotesLight />
         </button>
@@ -101,7 +121,7 @@ const App = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="src/assets/round-button.webp" alt="" />
+              <img src={roundButton} alt="" />
             </a>
           </div>
           <div className="landing-grid-container">
@@ -139,8 +159,8 @@ const App = () => {
                   my vision, my mission.
                   <br />
                   <span>Yada, yada, yada </span> goals, dreams, fears.
-                  <br /> If you think I would be usefull to your operation,
-                  don't be shy.
+                  <br /> If you think I would be useful to your operation, don't
+                  be shy.
                 </p>
               </div>
             </div>
@@ -164,16 +184,8 @@ const App = () => {
                     }, 3000);
                   }}
                 >
-                  <img
-                    src="src/assets/profil.webp"
-                    className="main-mug"
-                    alt="Image 1"
-                  />
-                  <img
-                    src="src/assets/anfas.webp"
-                    className="profil-mug"
-                    alt="Image 2"
-                  />
+                  <img src={profil} className="main-mug" alt="Image 1" />
+                  <img src={anfas} className="profil-mug" alt="Image 2" />
                 </div>
               </div>
 
@@ -192,11 +204,7 @@ const App = () => {
                 <SiReact style={{ color: "#06d1f8" }} />
               </div>
               <div className="tech-icon" title="Vite">
-                <img
-                  src="src/assets/vite.webp"
-                  className="vite-icon"
-                  alt="vite"
-                />
+                <img src={viteIcon} className="vite-icon" alt="vite" />
               </div>
               <div className="tech-icon" title="Create React App">
                 <SiCreatereactapp style={{ color: "#06d1f8" }} />
@@ -234,15 +242,6 @@ const App = () => {
               <div className="tech-icon" title="Perplexity">
                 <SiPerplexity style={{ color: "#20808e" }} />
               </div>
-              <div className="tech-icon" title="chatGPT">
-                <img
-                  className="chatgpt-icon"
-                  width="20"
-                  height="20"
-                  src="https://img.icons8.com/softteal/24/chatgpt.webp"
-                  alt="chatgpt"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -256,55 +255,50 @@ const App = () => {
               <div className="project-screen">
                 <h2>TimeLux</h2>
                 <div id="iframe-container">
-                  <iframe
-                    src="https://webartforge.com/timelux/"
-                    title="Embedded Example"
-                    style={{ border: "none" }}
-                  ></iframe>
+                  <a
+                    href="https://timelux.webartforge.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={timelux} alt="screenshot timelux" />
+                  </a>
                 </div>
                 <div className="screen-label">
                   <div className="project-tech">
-                    <div
-                      className="project-tech-icon project-tech-icon-vite"
-                      title="Vite"
-                    >
-                      <img
-                        src="src/assets/vite.webp"
-                        className="project-vite-icon"
-                        alt="vite"
-                      />
+                    <div className="tech-icon tech-icon-vite" title="Vite">
+                      <img src={viteIcon} className="vite-icon" alt="vite" />
                     </div>
-                    <div className="project-tech-icon" title="React">
+                    <div className="tech-icon" title="React">
                       <SiReact style={{ color: "#06d1f8" }} />
                     </div>
-                    <div className="project-tech-icon" title="React Router">
+                    <div className="tech-icon" title="React Router">
                       <SiReactrouter style={{ color: "#d0011b" }} />
                     </div>
-                    <div className="project-tech-icon" title="JavaScript">
+                    <div className="tech-icon" title="JavaScript">
                       <SiJavascript style={{ color: "#f2da1d" }} />
                     </div>
-                    <div className="project-tech-icon" title="CSS3">
+                    <div className="tech-icon" title="CSS3">
                       <SiCss3 style={{ color: "#1a6fb4" }} />
                     </div>
-                    <div className="project-tech-icon" title="Strapi">
+                    <div className="tech-icon" title="Strapi">
                       <SiStrapi style={{ color: "#8972f8" }} />
                     </div>
-                    <div className="project-tech-icon" title="Stripe">
+                    <div className="tech-icon" title="Stripe">
                       <SiStripe style={{ color: "#6772e4" }} />
                     </div>
-                    <div className="project-tech-icon" title="PostgreSQL">
-                      <SiPostgresql style={{ color: "#316190" }} />
-                    </div>
-                    <div className="project-tech-icon" title="Node.js">
+
+                    <div className="tech-icon" title="Node.js">
                       <SiNodedotjs style={{ color: "#85c340" }} />
                     </div>
                   </div>
                   <a
-                    href="https://webartforge.com/timelux/"
+                    className="github-link"
+                    href="https://github.com/Scepan74/timelux"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View Full Page <span>&gt;&gt;&gt;</span>
+                    <SiGithub className="tech-icon" />
+                    <span> &gt;&gt;&gt;</span>
                   </a>
                 </div>
               </div>
@@ -320,13 +314,13 @@ const App = () => {
                   architecture, frontend state management, API communication,
                   secure environment configurations, and dynamic CMS content
                   rendering. Code with full documentation is available on
-                  <a href="https://github.com/scepan74/">GitHub</a>.
+                  <a href="https://github.com/Scepan74/timelux"> GitHub</a>.
                 </p>
               </div>
               <br />
               <div className="project-text-list">
                 <div className="text-list-item">
-                  <label for="structure">Architecture & Structure</label>
+                  <label htmlFor="structure">Architecture & Structure</label>
                   <ul id="structure">
                     <li>Modular, Layout and route-based navigation.</li>
                     <li>React Context global state management.</li>
@@ -337,7 +331,7 @@ const App = () => {
                   </ul>
                 </div>
                 <div className="text-list-item">
-                  <label for="features">UI & Features</label>
+                  <label htmlFor="features">UI & Features</label>
                   <ul id="features">
                     <li>
                       Smooth, interactive image carousel with infinite looping
@@ -363,7 +357,7 @@ const App = () => {
                 </div>
 
                 <div className="text-list-item">
-                  <label for="api">Infrastructure, API & Data</label>
+                  <label htmlFor="api">Infrastructure, API & Data</label>
                   <ul id="api">
                     <li>
                       Frontend and backend cleanly separated into client/ and
@@ -383,7 +377,7 @@ const App = () => {
                 </div>
 
                 <div className="text-list-item">
-                  <label for="payment">Checkout & Payment</label>
+                  <label htmlFor="payment">Checkout & Payment</label>
                   <ul id="payment">
                     <li>Stripe integration for secure payment processing.</li>
                   </ul>
@@ -396,43 +390,40 @@ const App = () => {
               <div className="project-screen">
                 <h2>Uncork</h2>
                 <div id="iframe-container">
-                  <iframe
-                    src="https://webartforge.com/uncork/"
-                    title="Embedded Example"
-                    style={{ border: "none" }}
-                  ></iframe>
+                  <a
+                    href="https://uncork.webartforge.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={uncork} alt="screenshot uncork" />
+                  </a>
                 </div>
                 <div className="screen-label">
                   <div className="project-tech">
-                    <div
-                      className="project-tech-icon project-tech-icon-vite"
-                      title="Vite"
-                    >
-                      <img
-                        src="src/assets/vite.webp"
-                        className="project-vite-icon"
-                        alt="vite"
-                      />
+                    <div className="tech-icon tech-icon-vite" title="Vite">
+                      <img src={viteIcon} className="vite-icon" alt="vite" />
                     </div>
-                    <div className="project-tech-icon" title="React">
+                    <div className="tech-icon" title="React">
                       <SiReact style={{ color: "#06d1f8" }} />
                     </div>
-                    <div className="project-tech-icon" title="React Router">
+                    <div className="tech-icon" title="React Router">
                       <SiReactrouter style={{ color: "#d0011b" }} />
                     </div>
-                    <div className="project-tech-icon" title="JavaScript">
+                    <div className="tech-icon" title="JavaScript">
                       <SiJavascript style={{ color: "#f2da1d" }} />
                     </div>
-                    <div className="project-tech-icon" title="CSS3">
+                    <div className="tech-icon" title="CSS3">
                       <SiCss3 style={{ color: "#1a6fb4" }} />
                     </div>
                   </div>
                   <a
-                    href="https://webartforge.com/uncork/"
+                    className="github-link"
+                    href="https://github.com/Scepan74/uncork"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View Full Page <span>&gt;&gt;&gt;</span>
+                    <SiGithub className="tech-icon" />
+                    <span> &gt;&gt;&gt;</span>
                   </a>
                 </div>
               </div>
@@ -446,16 +437,16 @@ const App = () => {
                   with a clear separation of logic, layout, and data, the
                   project emphasizes real-world UX handling through global state
                   management, custom hooks, and a fully controlled component
-                  hierarchy.Adaptive CSS uses screen-size stylesheets and
+                  hierarchy. Adaptive CSS uses screen-size stylesheets and
                   device-based alternations. Code with full documentation is
                   available on
-                  <a href="https://github.com/scepan74/">GitHub</a>.
+                  <a href="https://github.com/Scepan74/uncork"> GitHub</a>.
                 </p>
               </div>
               <br />
               <div className="project-text-list">
                 <div className="text-list-item">
-                  <label for="structure">Architecture & Structure</label>
+                  <label htmlFor="structure">Architecture & Structure</label>
                   <ul id="structure">
                     <li>Declarative nested routing with react-router-dom</li>
                     <li>
@@ -473,7 +464,7 @@ const App = () => {
                   </ul>
                 </div>
                 <div className="text-list-item">
-                  <label for="features">UI & UX Features</label>
+                  <label htmlFor="features">UI & UX Features</label>
                   <ul id="features">
                     <li>Pure CSS animations (no libraries) </li>
                     <li>
@@ -503,7 +494,7 @@ const App = () => {
                 </div>
 
                 <div className="text-list-item">
-                  <label for="api">State & Data Management</label>
+                  <label htmlFor="api">State & Data Management</label>
                   <ul id="api">
                     <li>React Context global state management</li>
 
@@ -518,118 +509,123 @@ const App = () => {
               <div className="project-screen">
                 <h2>MicroCro</h2>
                 <div id="iframe-container">
-                  <iframe
-                    src="https://microcro.com"
-                    title="Embedded Example"
-                    style={{ border: "none" }}
-                  ></iframe>
-                </div>
-                <div className="screen-label">
-                  <div className="project-tech">
-                    <div
-                      className="project-tech-icon project-tech-icon-vite"
-                      title="Vite"
-                    >
-                      <img
-                        src="src/assets/vite.webp"
-                        className="project-vite-icon"
-                        alt="vite"
-                      />
-                    </div>
-                    <div className="project-tech-icon" title="React">
-                      <SiReact style={{ color: "#06d1f8" }} />
-                    </div>
-                    <div className="project-tech-icon" title="CSS">
-                      <SiCss3 style={{ color: "#1a6fb4" }} />
-                    </div>
-                  </div>
                   <a
                     href="https://microcro.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View Full Page <span>&gt;&gt;&gt;</span>
+                    <img src={micro} alt="sreenshot micro" />
+                  </a>
+                </div>
+                <div className="screen-label">
+                  <div className="project-tech">
+                    <div className="tech-icon tech-icon-vite" title="Vite">
+                      <img src={viteIcon} className="vite-icon" alt="vite" />
+                    </div>
+                    <div className="tech-icon" title="React">
+                      <SiReact style={{ color: "#06d1f8" }} />
+                    </div>
+                    <div className="tech-icon" title="CSS">
+                      <SiCss3 style={{ color: "#1a6fb4" }} />
+                    </div>
+                  </div>
+                  <a
+                    className="github-link"
+                    href="https://github.com/Scepan74/microcro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <SiGithub className="tech-icon" />
+                    <span> &gt;&gt;&gt;</span>
                   </a>
                 </div>
               </div>
               <div className="project-text-intro">
-                <h4>E-commerce Web App with CMS and Payment Integration</h4>
+                <h4>Clinical Research Organization Showcase Website</h4>
                 <br />
                 <p>
-                  This is a fully functional modular, responsive, custom-built
-                  e-commerce platform showcasing a complete full-stack
-                  implementation using React + React Router (frontend), Strapi
-                  CMS (headless backend), and Stripe (checkout and payment
-                  integration). The project demonstrates production-grade
-                  architecture, frontend state management, API communication,
-                  secure environment configurations, and dynamic CMS content
-                  rendering. Code with full documentation is available on
-                  <a href="https://github.com/scepan74/">GitHub</a>.
+                  This is a responsive, modular front-end web application built
+                  to showcase services and expertise of a Clinical Research
+                  Organization. The project focuses on clean information
+                  architecture, interactive service exploration, and clear
+                  presentation of therapeutic areas and capabilities. It
+                  demonstrates production-ready, scalable React code structure,
+                  reusable components, and dynamic modal-driven content. Code
+                  with full documentation is available on
+                  <a href="https://github.com/scepan74/"> GitHub</a>.
                 </p>
               </div>
               <br />
               <div className="project-text-list">
                 <div className="text-list-item">
-                  <label for="structure">Architecture & Structure</label>
+                  <label htmlFor="structure">Architecture & Structure</label>
                   <ul id="structure">
-                    <li>Modular, Layout and route-based navigation.</li>
-                    <li>React Context global state management.</li>
                     <li>
-                      Dynamic product filtering, contextual category states and
-                      search queries.
+                      Component-based architecture with logical section
+                      separation (Landing, Services, Because).
+                    </li>
+                    <li>
+                      Route-friendly structure ready for integration with React
+                      Router.
+                    </li>
+                    <li>
+                      Modal-driven interactivity for services exploration.
+                    </li>
+                    <li>
+                      Clean semantic markup optimized for accessibility and
+                      responsiveness.
                     </li>
                   </ul>
                 </div>
                 <div className="text-list-item">
-                  <label for="features">UI & Features</label>
+                  <label htmlFor="features">UI & Features</label>
                   <ul id="features">
                     <li>
-                      Smooth, interactive image carousel with infinite looping
-                      and action to collections.
+                      Landing section with brand introduction and visual
+                      storytelling.
                     </li>
                     <li>
-                      Search functionality by any products description related
-                      query.
+                      Dynamic background animation using layered divs and CSS
+                      keyframes.
                     </li>
                     <li>
-                      Cart with quantity management, clear and remove actions,
-                      and checkout transition logic.
+                      Interactive services section uses hexagonal menu with
+                      clickable service categories. Modal popups provide
+                      detailed descriptions for each service.
+                    </li>
+
+                    <li>
+                      Mobile-first responsive layout, custom CSS for consistent
+                      cross-device rendering.
                     </li>
                     <li>
-                      Responsive mobile-first design with custom CSS breakpoints
-                      and visual consistency across screen sizes.
-                    </li>
-                    <li>
-                      Visual feedback with conditional renders (loading states,
-                      empty states, errors).
+                      Conditional rendering for modal open/close state
+                      management.
                     </li>
                   </ul>
                 </div>
 
                 <div className="text-list-item">
-                  <label for="api">Infrastructure, API & Data</label>
+                  <label htmlFor="api">Infrastructure & Data Flow</label>
                   <ul id="api">
+                    <li>Pure front-end implementation.</li>
                     <li>
-                      Frontend and backend cleanly separated into client/ and
-                      api/ directories.
+                      State management handled with React's useState hooks.
                     </li>
-                    <li>Backend powered by Strapi CMS using REST API.</li>
                     <li>
-                      PostgreSQL used in production, replacing default
-                      development SQLite.
-                    </li>
-
-                    <li>
-                      Real-time interaction: product fetch, search query
-                      results, error handling, and status flags.
+                      Dynamic modal content sourced from a centralized object,
+                      ensuring easy scalability.
                     </li>
                   </ul>
                 </div>
 
                 <div className="text-list-item">
-                  <label for="payment">Checkout & Payment</label>
+                  <label htmlFor="payment">Services Menu Functionality</label>
                   <ul id="payment">
-                    <li>Stripe integration for secure payment processing.</li>
+                    <li>
+                      Each category dynamically populates a modal with nested
+                      content, titles, and coordinates for precise positioning.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -706,8 +702,8 @@ const App = () => {
                 <div className="lower-left"></div>
                 <div className="lower-right"></div>
                 <label className="about-label">
-                  Mentors, guides, inspirators and unsung heroes of tutorial
-                  hell :
+                  Mentors, guides, inspirers and unsung heroes of tutorial hell
+                  :
                 </label>
                 <ul>
                   <li>
@@ -721,7 +717,7 @@ const App = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.www.freecodecamp.org/"
+                      href="https://www.freecodecamp.org/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -764,15 +760,7 @@ const App = () => {
                       Codevolution
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="https://www.freecodecamp.org/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      freeCodeCamp
-                    </a>
-                  </li>
+
                   <li>
                     <a
                       href="https://courses.webdevsimplified.com/"
@@ -810,47 +798,44 @@ const App = () => {
       <section id="testimonials">
         <div className="frame" id="testimonials-frame">
           <h1>Testimonials</h1>
-          <p>
-            Social testimonials* from the people I was lucky to cross paths
-            with.
-          </p>
+          <p>Others about me *</p>
           <div className="graveyard-grid">
             <div
               className="card"
               onClick={() =>
                 openModal(
                   "Aleksandar Babić",
-                  "Business owner, Professor, Designer, Enterprenuer",
-                  "My relationship with Šćepan is a bittersweet experience. Although stubborn and opinionated, Šćepan is relayable and highly dedicated to his work... Excellent professional.",
-                  "src/assets/babic.webp"
+                  "Business owner, Professor, Designer, Entrepreneur",
+                  "My relationship with Šćepan is a bittersweet experience. Although stubborn and opinionated, Šćepan is reliable and highly dedicated to his work ...Excellent professional.",
+                  babic
                 )
               }
             >
               <div className="img-container">
-                <img src="src/assets/babic.webp" alt="" />
+                <img src={babic} alt="" />
               </div>
               <h4>Aleksandar Babić</h4>
-              <h5>Business Owner, Educator, Designer, Enterprenuer </h5>
+              <h5>Business Owner, Educator, Designer, Entrepreneur</h5>
 
-              <p>"...Exellent professional."</p>
+              <p>"...Excellent professional"</p>
             </div>
             <div
               className="card"
               onClick={() =>
                 openModal(
-                  "Dejan Dražić",
+                  "Dragan Dražić",
                   "Designer",
-                  "We grew up together. Without my musical talent and lady-killer charm, he still is a great company. Šćepan is always a pleasure to be around and to work with... Great guy!",
-                  "src/assets/gaga.webp"
+                  "We grew up together. Without my musical talent and lady-killer charm, he still is a great company. Šćepan is always a pleasure to be around and to work with ...Great guy!",
+                  gaga
                 )
               }
             >
               <div className="img-container">
-                <img src="src/assets/gaga.webp" alt="" />
+                <img src={gaga} alt="" />
               </div>
-              <h4>Dejan Dražić</h4>
+              <h4>Dragan Dražić</h4>
               <h5>Designer</h5>
-              <p>"... Great guy." </p>
+              <p>"...Great guy" </p>
             </div>
 
             <div
@@ -859,35 +844,35 @@ const App = () => {
                 openModal(
                   "Sihle Twala",
                   "Educator, Financial Expert",
-                  "One always knows what to expect from Šćepan. He is cooperative, reliable and supportive... Punctual and consistent.",
-                  "src/assets/sihle.webp"
+                  "One always knows what to expect from Šćepan. He is cooperative, reliable and supportive ...Punctual and consistent.",
+                  sihle
                 )
               }
             >
               <div className="img-container">
-                <img src="src/assets/sihle.webp" alt="" />
+                <img src={sihle} alt="" />
               </div>
               <h4>Sihle Twala</h4>
               <h5>Educator, Financial Expert</h5>
-              <p>"..Punctual and consistent." </p>
+              <p>"...Punctual and consistent" </p>
             </div>
             <div
               className="card"
               onClick={() =>
                 openModal(
-                  "Mr.Fly",
+                  "Mr. Fly",
                   "Writer, Public Speaker, 'Pimp of the Year 1989'",
-                  "Šćepan is natural born fixer. Where others see problems, he sees issues, chalanges to be met and conquered... Problem solver.",
-                  "src/assets/mrFly.webp"
+                  "Šćepan is natural-born fixer. Where others see problems, he sees issues, challenges to be met and conquered ...Problem solver.",
+                  mrFly
                 )
               }
             >
               <div className="img-container">
-                <img src="src/assets/mrFly.webp" alt="" />
+                <img src={mrFly} alt="" />
               </div>
-              <h4>Mr.Fly</h4>
+              <h4>Mr. Fly</h4>
               <h5>Writer, Public Speaker, "Pimp of the Year 1989"</h5>
-              <p>"...Problem solver..." </p>
+              <p>"...Problem solver" </p>
             </div>
             <div
               className="card"
@@ -895,17 +880,17 @@ const App = () => {
                 openModal(
                   "Drago Milerlei",
                   "Senior IT Professional, Martial Art Sensei, Diver instructor ",
-                  "For years I've been telling him to quit all other BS and focus on coding. It is a true shame he waited for so long... Knowligable and inquisitive.",
-                  "src/assets/drago.webp"
+                  "For years I've been telling him to quit all other BS and focus on coding. It is a true shame he waited for so long ...Knowledgeable and inquisitive.",
+                  drago
                 )
               }
             >
               <div className="img-container">
-                <img src="src/assets/drago.webp" alt="" />
+                <img src={drago} alt="" />
               </div>
               <h4>Drago Milerlei</h4>
               <h5>Senior IT Professional, Judoka, Diver</h5>
-              <p>"... Knawligable, inquisitive." </p>
+              <p>"...Knowledgeable, inquisitive" </p>
             </div>
             <div
               className="card"
@@ -913,13 +898,13 @@ const App = () => {
                 openModal(
                   "Jelena Janićijević",
                   "PMI Director, Senior Project Manager, Milonguera",
-                  "Šćepan has always been hard working - hard playing character. With him on a team, operation will never be compromised. He's demanding, equaly to himself as to the others. He leads the way by his own example.",
-                  "src/assets/jela.webp"
+                  "Šćepan has always been hard-working,  hard-playing character. With him on a team, operations will never be compromised. He's demanding, equally to himself as others. He leads the way by his own example.",
+                  jela
                 )
               }
             >
               <div className="img-container">
-                <img src="src/assets/jela.webp" alt="" />
+                <img src={jela} alt="" />
               </div>
               <h4>Jelena Janićijević</h4>
               <h5>PMI Director, Senior Project Manager, Milonguera</h5>
@@ -931,13 +916,13 @@ const App = () => {
                 openModal(
                   "Danijela Žižić",
                   "Senior IT Security Professional",
-                  "Šćepan and I go way back. He's a hard worker and co-operative colleague. He's frank, direct and easy to comunicate with. It's a pleasure to work with him .",
-                  "src/assets/danijela.webp"
+                  "Šćepan and I go way back. He's a hard worker and a cooperative colleague. He's frank, direct and easy to communicate with. It's a pleasure to work with him.",
+                  danijela
                 )
               }
             >
               <div className="img-container">
-                <img src="src/assets/danijela.webp" alt="" />
+                <img src={danijela} alt="" />
               </div>
               <h4>Danijela Žižić</h4>
               <h5>Senior IT Security Professional</h5>
@@ -948,18 +933,18 @@ const App = () => {
               onClick={() =>
                 openModal(
                   "Aleksandar Čakalić",
-                  "Senior Frontend Engeneer",
-                  " I think Šćepan has much to give to this industry. Who ever has worked with him knows that he's persistent and dedicated.",
-                  "src/assets/acacakalic.webp"
+                  "Senior Frontend Engineer",
+                  " I think Šćepan has much to give to this industry. Anyone who has worked with him knows that he's persistent and dedicated.",
+                  acacakalic
                 )
               }
             >
               <div className="img-container">
-                <img src="src/assets/acacakalic.webp" alt="" />
+                <img src={acacakalic} alt="" />
               </div>
               <h4>Aleksandar Čakalić</h4>
-              <h5>Senior Frontend Engeneer</h5>
-              <p>"...Persistent and dedicated." </p>
+              <h5>Senior Frontend Engineer</h5>
+              <p>"...Persistent and dedicated" </p>
             </div>
             <div
               className="card"
@@ -967,17 +952,17 @@ const App = () => {
                 openModal(
                   "Ivan Rajković",
                   "Head of Engineering",
-                  "Šćepan is an exceptional professional. Outstanding work!",
-                  "src/assets/ivan.webp"
+                  "Šćepan is an exceptional professional. His dedication and commitment to his work are truly inspiring.",
+                  ivan
                 )
               }
             >
               <div className="img-container">
-                <img src="src/assets/ivan.webp" alt="" />
+                <img src={ivan} alt="" />
               </div>
               <h4>Ivan Rajković</h4>
               <h5>Head of Engineering</h5>
-              <p>"...Exceptional!" </p>
+              <p>"...Exceptional" </p>
             </div>
             <div
               className="card"
@@ -985,73 +970,37 @@ const App = () => {
                 openModal(
                   "Jovan Miličević",
                   "Chief Sales Officer, Senior Business Manager, Regional Manager at EVGA",
-                  "Šćepan is an excellent example of commitment and capability. He's a true leader and capable manager",
-                  "src/assets/jovan.webp"
+                  "Šćepan is an excellent example of commitment and capability. He's a true leader and capable manager.",
+                  jovan
                 )
               }
             >
               <div className="img-container">
-                <img src="src/assets/jovan.webp" alt="" />
+                <img src={jovan} alt="" />
               </div>
               <h4>Jovan Miličević</h4>
               <h5>CSO, Senior Business Manager, Regional Manager</h5>
-              <p>"...Committed and capable." </p>
+              <p>"...Committed and capable" </p>
             </div>
-            <div
-              className="card"
-              onClick={() =>
-                openModal(
-                  "Mali Mekani",
-                  "self-made man",
-                  "No idea who's that guy.",
-                  "src/assets/Gates.webp"
-                )
-              }
-            >
-              <div className="img-container">
-                <img src="src/assets/Gates.webp" alt="" />
-              </div>
-              <h4>Mali Mekani</h4>
-              <h5>Self-made man</h5>
-              <p>"Garage was too small for two of us." </p>
-            </div>
-            <div
-              className="card"
-              onClick={() =>
-                openModal(
-                  "Tony Stark",
-                  "self-made man",
-                  "Never heard of him.",
-                  "src/assets/Elon.webp"
-                )
-              }
-            >
-              <div className="img-container">
-                <img src="src/assets/Elon.webp" alt="" />
-              </div>
-              <h4>Tony Stark</h4>
-              <h5>Self-made man</h5>
 
-              <p>"South Africa was too small for two of us." </p>
-            </div>
             <div
               className="card"
               onClick={() =>
                 openModal(
                   "Mia Khalifa",
-                  "digital creator",
-                  "Someone took him away from me, and seven kindoms couldn't fill the hole he left behind... I'm never gonna dance again.",
-                  "src/assets/Mia.webp"
+                  "Digital Creator",
+                  "Someone took him away from me, and seven kingdoms couldn't fill the hole he left behind... I'm never gonna dance again.",
+                  mia
                 )
               }
             >
               <div className="img-container">
-                <img src="src/assets/Mia.webp" alt="" />
+                <img src={mia} alt="" />
               </div>
               <h4>Mia Khalifa</h4>
               <h5>Digital Creator</h5>
 
-              <p>"I'm never gonna dance again."</p>
+              <p>"I'm never gonna dance again"</p>
             </div>
             <div
               className="card"
@@ -1059,17 +1008,17 @@ const App = () => {
                 openModal(
                   "Jordan Jovanović",
                   "Baba Yaga",
-                  " He's dedication inspired me. I am a fan of his work. Learned a few pencil tricks from him ... Focused, committed and stubborn sačuvaj bože! ",
-                  "src/assets/wick.webp"
+                  " His dedication inspired me. I am a fan of his work. Learned a few pencil tricks from him ... Focused, committed and stubborn sačuvaj bože! ",
+                  wick
                 )
               }
             >
               <div className="img-container">
-                <img src="src/assets/wick.webp" alt="" />
+                <img src={wick} alt="" />
               </div>
               <h4>Jordan Jovanović</h4>
               <h5>Baba Yaga</h5>
-              <p>"Focused, committed and stubborn." </p>
+              <p>"Focused, committed and stubborn" </p>
             </div>
             <div
               className="card"
@@ -1078,20 +1027,20 @@ const App = () => {
                   "Ex mother-in-law",
                   "baksuz",
                   "What was she thinking?! I wish I never met this guy!",
-                  "src/assets/tasta.webp"
+                  tasta
                 )
               }
             >
               <div className="img-container">
-                <img src="src/assets/tasta.webp" alt="" />
+                <img src={tasta} alt="" />
               </div>
               <h4>Ex mother-in-law</h4>
               <h5>baksuz</h5>
               <p>"I wish I never met him! " </p>
             </div>
           </div>
-          <small className="disclamer">
-            * Statements expressed hereby are subjective to artistic
+          <small className="disclaimer">
+            * Statements expressed hereby are subjective and open to
             interpretation.
           </small>
         </div>
