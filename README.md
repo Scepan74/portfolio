@@ -21,7 +21,6 @@ It demonstrates clean, maintainable code with a focus on scalability and perform
 - Vite  
 - JavaScript (ES6+)  
 - CSS3  
-- React Router  
 - NPM (Node)
 
 ---
