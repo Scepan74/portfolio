@@ -1,37 +1,31 @@
-# Scepan – Portfolio
+# MicroCro – External App
 
-Live: [portfolio.webartforge.com](https://portfolio.webartforge.com/)
+**Live:** [microcro.com](https://microcro.com)
 
-This is my personal front-end portfolio built with **React** and **Vite**. It showcases selected projects as part of a complete responsive, animated, and professional portfolio experience.
+MicroCro is a fully responsive front-end project designed to showcase modern UI development and integration.  
+It demonstrates clean, maintainable code with a focus on scalability and performance.
 
 ---
 
-## 🔹 Projects Featured
-
-| Project    | Type        | Live Link |
-|------------|-------------|-----------|
-| **Uncork** | Front-End SPA | [uncork.webartforge.com](https://uncork.webartforge.com/) |
-| **TimeLux**| Full-Stack E-Commerce | [timelux.webartforge.com](https://timelux.webartforge.com/) |
-| **MicroCro** | External App | [microcro.com](https://microcro.com) |
+## 🔹 Project Overview
+| Feature         | Description |
+|-----------------|-------------|
+| Type            | External App |
+| Focus           | Front-End Development |
+| Live Link       | [microcro.com](https://microcro.com) |
 
 ---
 
 ## 🛠️ Tech Stack
-
-- React
-- Vite
-- JavaScript (ES6+)
-- CSS3
-- React Router
-- Strapi
-- Stripe
+- React  
+- Vite  
+- JavaScript (ES6+)  
+- CSS3  
+- React Router  
 - NPM (Node)
-  
 
 ---
 
 ## 📫 Contact
-
-Email: scepan.office@webartforge.com
-GitHub: https://github.com/scepan74
-
+- **Email:** scepan.office@webartforge.com  
+- **GitHub:** [https://github.com/scepan74](https://github.com/scepan74)
