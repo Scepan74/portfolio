@@ -25,6 +25,16 @@ It demonstrates clean, maintainable code with a focus on scalability and perform
 
 ---
 
+## ✨ Features
+- Fully responsive layout for all screen sizes  
+- Dynamic animated background for a modern visual effect  
+- Custom-built navigation menu with unique styling and interactions  
+- Lightweight and optimized for fast loading  
+- Clean, scalable project structure  
+- Polished UI focused on usability and aesthetics  
+
+---
+
 ## 📫 Contact
 - **Email:** scepan.office@webartforge.com  
 - **GitHub:** [https://github.com/scepan74](https://github.com/scepan74)
