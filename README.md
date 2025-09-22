@@ -10,8 +10,8 @@ This is my personal front-end portfolio built with **React** and **Vite**. It sh
 
 | Project    | Type        | Live Link |
 |------------|-------------|-----------|
-| **Uncork** | Front-End SPA | [webartforge.com/uncork](https://uncork.webartforge.com/) |
-| **TimeLux**| Full-Stack E-Commerce | [webartforge.com/timelux](https://timelux.webartforge.com/) |
+| **Uncork** | Front-End SPA | [uncork.webartforge.com](https://uncork.webartforge.com/) |
+| **TimeLux**| Full-Stack E-Commerce | [timelux.webartforge.com](https://timelux.webartforge.com/) |
 | **MicroCro** | External App | [microcro.com](https://microcro.com) |
 
 ---
