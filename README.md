@@ -1,6 +1,6 @@
 # Scepan – Portfolio
 
-Live: [https://webartforge.com/portfolio](https://webartforge.com/portfolio)
+Live: [portfolio.webartforge.com](https://portfolio.webartforge.com/)
 
 This is my personal front-end portfolio built with **React** and **Vite**. It showcases selected projects as part of a complete responsive, animated, and professional portfolio experience.
 
