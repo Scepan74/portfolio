@@ -1,37 +1,38 @@
-# MicroCro – External App
+# WebArtForge Portfolio – Front-End App
 
-**Live:** [microcro.com](https://microcro.com)
+**Live:** [webartforge.com](https://webartforge.com)
 
-MicroCro is a fully responsive front-end project designed to showcase modern UI development and integration.  
-It demonstrates clean, maintainable code with a focus on scalability and performance.
+WebArtForge Portfolio is a modern, fully responsive front-end project designed to showcase professional web development projects, UI/UX skills, and interactive features.  
+It serves as the central hub for demonstrating completed projects such as TimeLux, Uncork, and MicroCro, highlighting technical expertise and design proficiency.
 
 ---
 
 ## 🔹 Project Overview
 | Feature         | Description |
 |-----------------|-------------|
-| Type            | External App |
-| Focus           | Front-End Development |
-| Live Link       | [microcro.com](https://microcro.com) |
+| Type            | Front-End App |
+| Focus           | Portfolio & Project Showcase |
+| Live Link       | [webartforge.com](https://webartforge.com) |
+| Target Audience | Recruiters, potential clients, and tech professionals |
 
 ---
 
 ## 🛠️ Tech Stack
-- React  
-- Vite  
-- JavaScript (ES6+)  
-- CSS3  
-- NPM (Node)
+- **Front-End:** React, JavaScript (ES6+), CSS3, Vite – building fast, responsive interfaces  
+- **Animations & Effects:** CSS3 transitions, keyframes, and smooth interactive elements  
+- **Routing & Navigation:** React Router – seamless multi-page navigation  
+- **Package Management:** NPM (Node.js)  
+- **Performance & Optimization:** Modular structure, lazy loading, and optimized asset handling  
 
 ---
 
-## ✨ Features
-- Fully responsive layout for all screen sizes  
-- Dynamic animated background for a modern visual effect  
-- Custom-built navigation menu with unique styling and interactions  
-- Lightweight and optimized for fast loading  
-- Clean, scalable project structure  
-- Polished UI focused on usability and aesthetics  
+## ✨ Key Highlights
+- Central hub for showcasing multiple full-stack and front-end projects  
+- Fully responsive design optimized for all devices and screen sizes  
+- Interactive UI/UX features demonstrating modern web development skills  
+- Clean, maintainable code structure suitable for professional portfolios  
+- Optimized for performance, accessibility, and smooth user experience  
+- Designed to impress recruiters and potential clients with technical proficiency  
 
 ---
 
