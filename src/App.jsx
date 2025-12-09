@@ -313,8 +313,15 @@ const App = () => {
                   integration). The project demonstrates production-grade
                   architecture, frontend state management, API communication,
                   secure environment configurations, and dynamic CMS content
-                  rendering. Code with full documentation is available on
-                  <a href="https://github.com/Scepan74/timelux"> GitHub</a>.
+                  rendering. Code with full documentation is available on &nbsp;
+                  <a
+                    href="https://github.com/Scepan74/timelux"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                  .
                 </p>
               </div>
               <br />
@@ -439,8 +446,15 @@ const App = () => {
                   management, custom hooks, and a fully controlled component
                   hierarchy. Adaptive CSS uses screen-size stylesheets and
                   device-based alternations. Code with full documentation is
-                  available on
-                  <a href="https://github.com/Scepan74/uncork"> GitHub</a>.
+                  available on &nbsp;
+                  <a
+                    href="https://github.com/Scepan74/uncork"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                  .
                 </p>
               </div>
               <br />
@@ -514,7 +528,7 @@ const App = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={micro} alt="sreenshot micro" />
+                    <img src={micro} alt="screenshot micro" />
                   </a>
                 </div>
                 <div className="screen-label">
@@ -531,7 +545,7 @@ const App = () => {
                   </div>
                   <a
                     className="github-link"
-                    href="https://github.com/Scepan74/microcro"
+                    href="https://github.com/Scepan74/Micro-Cro"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -541,18 +555,25 @@ const App = () => {
                 </div>
               </div>
               <div className="project-text-intro">
-                <h4>Clinical Research Organization Showcase Website</h4>
+                <h4>Contract Research Organization Showcase Website</h4>
                 <br />
                 <p>
                   This is a responsive, modular front-end web application built
-                  to showcase services and expertise of a Clinical Research
+                  to showcase services and expertise of a Contract Research
                   Organization. The project focuses on clean information
                   architecture, interactive service exploration, and clear
                   presentation of therapeutic areas and capabilities. It
                   demonstrates production-ready, scalable React code structure,
                   reusable components, and dynamic modal-driven content. Code
-                  with full documentation is available on
-                  <a href="https://github.com/scepan74/"> GitHub</a>.
+                  with full documentation is available on &nbsp;
+                  <a
+                    href="https://github.com/Scepan74/Micro-Cro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                  .
                 </p>
               </div>
               <br />
